@@ -43,3 +43,10 @@ group by
 "Clients"."name",
 "Credits"."rate"
 ORDER BY SUM_OPERATIONS_RUR DESC;
+
+
+
+
+
+
+
