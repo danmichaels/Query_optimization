@@ -33,10 +33,10 @@ where
       (select"Operations"."for_id" from"Operations"
       where"Operations"."date" between'01.01.2010' and '30.05.2015' and
       "Operations"."date" between"Credits"."start_date" and '30.05.2015'))
-   and
-      ("Bill"."id" in
-      (select"Credits"."bill_id" from "Credits"
-      where"Credits"."last_update" between'01.01.2010' and '30.05.2015'))
+   --and
+   --   ("Bill"."id" in
+   --   (select"Credits"."bill_id" from "Credits"
+   --   where"Credits"."last_update" between'01.01.2010' and '30.05.2015'))
    )
 group by
 "Clients"."id",
